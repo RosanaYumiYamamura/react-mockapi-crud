@@ -10,8 +10,17 @@ export function show_alerta(mensaje,icono,foco){
     });
 }
 
+// function onfocus(foco){
+//     if(foco !==''){
+//         document.getElementById(foco).focus();
+//     }
+// }
+
 function onfocus(foco){
-    if(foco !==''){
-        document.getElementById(foco).focus();
+    if(foco && foco !==''){
+        const elemento = document.getElementById(foco);
+        if (elemento) {
+            elemento.focus();
+        }
     }
 }
